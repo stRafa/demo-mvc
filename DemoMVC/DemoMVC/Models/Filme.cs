@@ -27,7 +27,7 @@ namespace DemoMVC.Models
         public decimal Valor { get; set; }
 
         [Required(ErrorMessage = "Preencha o campo Avaliação")]
-        [RegularExpression("^[0-5]*$", ErrorMessage = "Apendas números, sendo eles de 0 a 5")]
+        [RegularExpression("^[0-5]*$", ErrorMessage = "Apenas números, sendo eles de 0 a 5")]
         [Display(Name = "Avaliação")]
         public int Avaliacao { get; set; }
     }
